@@ -1,0 +1,149 @@
+body {
+    background-color: black;
+}
+
+div {
+    font-family: Helvetica;
+    /* background-color: black; */
+    color: gray;
+    font-size: 40px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(gray);
+}
+.items1{
+    border-style:solid;
+}
+
+.items2 {
+    border-style:solid;
+}
+
+.items3 {
+    border-style:solid;
+}
+
+.items4 {
+    border-style:solid;
+}
+
+#big_div {
+    display: flex;
+    justify-content: center;
+}
+
+#other_div {
+    display:flex;
+    flex-direction:row;
+    text-align:start;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+
+
+
+#paragraph {
+    text-align:start;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+/* ul{
+    font-size: 15px;
+} */
+
+img {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-left: 20px;
+    width: 750px;
+    height: 500px;
+}
+
+
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.items1:hover{
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+
+.items3:hover{
+    text-decoration: underline;
+    text-decoration-color: purple;
+}
+.items2:hover{
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+.items4:hover{
+    text-decoration: underline;
+    text-decoration-color: green;
+}
+
+#First{
+    width: 100px;
+    
+
+}
+
+#Second{
+    width: 1650px;
+    
+}
+
+@media(max-width: 1030px) {
+    p {
+        font-size: 120%
+    }
+
+    div {
+        font-size: 120%
+    }
+    
+    #other_div {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    img {
+        width: 50%;
+        height: 50%;
+    }
+    }
+
+@media(max-width: 530px){
+        p {
+            font-size: 150%;
+        }
+        .items1, .items2, .items3, .items4 {
+            font-size: 50%
+        }
+        #paragraph {
+            font-size: 150%;
+        }
+        #big_div {
+            flex-direction: row;
+            align-items: center;
+            font-size: 150%;
+        }
+        div {
+            font-size: 150%;
+        }
+
+        #other_div {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        img {
+            width: 90%;
+            height: 90%;
+        }
+    }
